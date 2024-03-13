@@ -1,6 +1,6 @@
 import sqlite3  
 from datetime import datetime
-import time
+from time import sleep
 
 #conditions idéales
 lumiereIdeale = 0 
@@ -17,19 +17,19 @@ req = "CREATE TABLE donnees(date TEXT NOT NULL, lumiere INTEGER not null, pH INT
 cur.execute(req)
 conn.commit() 
 
-while True(): #Il faut trouver une bonne manière de garder cette boucle pour qu'elle n'arrête pas de run
+while True:
     now = datetime.now()
     date = now.strftime("%Y/%m/%d %H:%M:%S")
 
     #lire les données des capteurs
-    lumiere = 1 
+    lumiere = 1        
     pH = 2
     temperature = 3
-    niveauDEau = 4
+    niveauDEau = 4        
     humidite = 5
 
     cur.execute("Insert into donnees (`date` , `lumiere` , `pH` , `temperature` , `niveauDEau`, `humidite`) values (? , ? , ? , ? , ?, ?)" , (date , lumiere , pH , temperature , niveauDEau , humidite) )
     conn.commit() 
-    time.sleep(600) #à chaque 10 minutes(10*60), refaire la boucle
+    sleep(600) #10 minutes
  
 conn.close 

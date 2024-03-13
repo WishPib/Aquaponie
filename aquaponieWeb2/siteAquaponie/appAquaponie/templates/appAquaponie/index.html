@@ -6,75 +6,77 @@
     <title>Projet Aquaponie</title>
     <style>
 body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f0f0f0;
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
 
-        h1, h2 {
-            text-align: center;
-            color: #333;
-        }
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-        li {
-            margin-bottom: 10px;
-            padding-left: 20px;
-            position: relative;
-        }
+li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
 
-        li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: green;
-        }
+li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: green;
+}
 
-        .description p {
-            line-height: 1.5;
-            text-align: justify;
-        }
+.description p {
+    line-height: 1.5;
+    text-align: justify;
+}
 
-        .measurements {
-            margin-top: 20px;
-        }
+.measurements {
+    margin-top: 20px;
+}
 
-        .measurements ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
+.measurements ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
 
-        .measurements li {
-            padding-left: 0;
-        }
+.measurements li {
+    padding-left: 0;
+}
 
-        .measurements li::before {
-            content: none;
-        }
+.measurements li::before {
+    content: none;
+}
 
-        .image-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-        }
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
     </style>
 </head>
 <body>
@@ -84,10 +86,10 @@ body {
             <img src="imageAquaponie.jpg" alt="Aquaponie">
         </div>
 
-        <h1>Projet Aquaponie</h1>
+        <h1 style="color: #4CAF50;">Projet Aquaponie</h1>
 
         <div class="info">
-            <h2>Avantages</h2>
+            <h2 style="color: #4CAF50;">Avantages</h2>
             <ul>
                 <li>Utilise 90% moins d'eau</li>
                 <li>Pas de pesticides utilisés</li>
@@ -99,14 +101,14 @@ body {
         </div>
 
         <div class="description">
-            <h2>Description</h2>
+            <h2 style="color: #4CAF50;">Description</h2>
             <p>L'aquaponie est une méthode de culture combinant l'aquaculture (élevage de poissons) et l'hydroponie (culture de plantes sans sol). Dans ce système, les déchets des poissons sont convertis en nutriments pour les plantes, et les plantes filtrent l'eau pour les poissons, créant un écosystème fermé et durable.</p>
 
             <p>Ce projet vise à promouvoir l'agriculture urbaine et à offrir une solution écologique pour la production alimentaire locale. Grâce à son faible encombrement et sa consommation d'eau et d'énergie réduite, il est adapté aux espaces limités en ville.</p>
         </div>
 
         <div class="measurements">
-            <h2>Mesures</h2>
+            <h2 style="color: #4CAF50;">Mesures</h2>
             <ul>
                 <li>Température: <span id="temperature">...</span></li>
                 <li>Humidité: <span id="humidity">...</span></li>

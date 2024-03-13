@@ -2,27 +2,120 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Aquaponie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Aquaponie</title>
+    <style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: green;
+        }
+
+        .description p {
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .measurements {
+            margin-top: 20px;
+        }
+
+        .measurements ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .measurements li {
+            padding-left: 0;
+        }
+
+        .measurements li::before {
+            content: none;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
 
-<h1 style="text-align:center;">Projet aquaponie</h1>
-<p>Utilise 90% moins d’eau</p>
-</p>Pas de pesticides utilisés</p>
-</p>Pas d’engrais azotés utilisés</p>
-</p>Utilise très peu d’énergie</p>
-</p>S’installe en ville ou dans les lieux limités en espace</p>
-</p>Permet une production en continu</p>
+        <div class="image-container">
+            <img src="imageAquaponie.jpg" alt="Aquaponie">
+        </div>
 
-<h2>Mesures</h2>
+        <h1>Projet Aquaponie</h1>
 
-<ol>
-  <li>Température</li>
-  <li>Humidité</li>
-  <li>lumière</li>
-    <li>pH</li>
-    <li>niveau d'eau</li>
-</ol>
+        <div class="info">
+            <h2>Avantages</h2>
+            <ul>
+                <li>Utilise 90% moins d'eau</li>
+                <li>Pas de pesticides utilisés</li>
+                <li>Pas d'engrais azotés utilisés</li>
+                <li>Utilise très peu d'énergie</li>
+                <li>S'installe en ville ou dans les lieux limités en espace</li>
+                <li>Permet une production en continu</li>
+            </ul>
+        </div>
+
+        <div class="description">
+            <h2>Description</h2>
+            <p>L'aquaponie est une méthode de culture combinant l'aquaculture (élevage de poissons) et l'hydroponie (culture de plantes sans sol). Dans ce système, les déchets des poissons sont convertis en nutriments pour les plantes, et les plantes filtrent l'eau pour les poissons, créant un écosystème fermé et durable.</p>
+
+            <p>Ce projet vise à promouvoir l'agriculture urbaine et à offrir une solution écologique pour la production alimentaire locale. Grâce à son faible encombrement et sa consommation d'eau et d'énergie réduite, il est adapté aux espaces limités en ville.</p>
+        </div>
+
+        <div class="measurements">
+            <h2>Mesures</h2>
+            <ul>
+                <li>Température: <span id="temperature">...</span></li>
+                <li>Humidité: <span id="humidity">...</span></li>
+                <li>Lumière: <span id="light">...</span></li>
+                <li>pH: <span id="ph">...</span></li>
+                <li>Niveau d'eau: <span id="water-level">...</span></li>
+            </ul>
+        </div>
+    </div>
 
 </body>
 </html>

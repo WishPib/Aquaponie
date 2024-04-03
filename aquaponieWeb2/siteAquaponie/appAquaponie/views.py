@@ -1,11 +1,17 @@
 from django.shortcuts import render
-#from models import mesure
+from .models import mesure
 
 
 def index(request):
-    #dataTemperature = mesure.temperature
-    #dataHumidite = mesure.humidite
-    #dataPh = mesure.ph
-    #dataLumiere = mesure.lumiere
-    #dataNiveauDeau = mesure.niveauDeau
-    return render(request, 'appAquaponie/index.html', {})
+    dataTemperature = mesure.temperature
+    dataHumidite = mesure.humidite
+    dataPh = mesure.ph
+    dataLumiere = mesure.lumiere
+    dataNiveauDeau = mesure.niveauDeau
+    return render(request, 'appAquaponie/index.html', {
+        'dataTemperature': dataTemperature,
+        'dataHumidite': dataHumidite,
+        'dataPh': dataPh,
+        'dataLumiere': dataLumiere,
+        'dataNiveauDeau': dataNiveauDeau
+    })

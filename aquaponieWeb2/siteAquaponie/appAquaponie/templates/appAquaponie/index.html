@@ -117,6 +117,13 @@ li::before {
                 <li>Niveau d'eau: {{data.niveauDeau}}</li>
             </ul>
         </div>
+
+                {% for file in files %}
+        <div class="db">
+            <h2 style="color: #4CAF50;">Database</h2>
+            <button> <a href="{% url 'download_datafile' file.id %}">Download</a></button>
+        </div>
+        {% endfor %}
     </div>
 
 </body>

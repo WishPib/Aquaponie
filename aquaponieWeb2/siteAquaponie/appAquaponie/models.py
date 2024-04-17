@@ -9,8 +9,11 @@ class Mesures(models.Model):
     niveauDeau = models.DecimalField(max_digits=5, decimal_places=2)
     lumiere = models.IntegerField()
 
-   #humidite = 10
-   #temperature = 20
-   #ph = 30
-   #niveauDeau = 40
-   #lumiere = 50
+
+class Datafile(models.Model):
+    title = models.CharField(max_length=100)
+    file = models.FileField(upload_to='datafile/')
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title

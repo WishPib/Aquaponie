@@ -1,9 +1,8 @@
-import Aquaponie.CapteurNiveauEau
-import Aquaponie.CapteurMOIST
 import time
+import CapteurNiveauEau
 
-Aquaponie.CapteurNiveauEau.commencer()
+CapteurNiveauEau.commencer()
 
 time.sleep(5)
 
-Aquaponie.CapteurNiveauEau.stop()
+CapteurNiveauEau.stop()

@@ -1,6 +1,7 @@
 import time
 import CapteurNiveauEau
 import CapteurMOIST
+import Pompe
 
 CapteurNiveauEau.activer()
 CapteurMOIST.activer()

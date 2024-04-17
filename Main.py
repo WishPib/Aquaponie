@@ -1,8 +1,20 @@
 import time
 import CapteurNiveauEau
+import CapteurMOIST
 
-CapteurNiveauEau.commencer()
+CapteurNiveauEau.activer()
+CapteurMOIST.activer()
+time.sleep(2)
 
-time.sleep(5)
 
-CapteurNiveauEau.stop()
+
+#CapteurNiveauEau.arreter()
+
+def prendreMesures():
+    CapteurNiveauEau.prendreMesure()
+    CapteurMOIST.prendreMesure()
+
+while True:
+    prendreMesures()
+    print()
+    time.sleep(2)

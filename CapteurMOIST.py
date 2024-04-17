@@ -6,17 +6,22 @@ channel = 17
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(channel, GPIO.IN)
 
-def callback(channel):
+fonctionne = False
 
-    value = GPIO.input(channel)
-    if value == GPIO.LOW:
-        print("eau")
-    else: 
-        print("no eau")
+def arreter():
+    global fonctionne
+    fonctionne = False
+    print("stop")
 
-GPIO.add_event_detect(channel, GPIO.BOTH, bouncetime=300)
-GPIO.add_event_callback(channel, callback)
+def activer():
+    global fonctionne
+    fonctionne = True
+    print("start")
 
-while True:
-    time.sleep(1)
-
+def prendreMesure():
+    if (fonctionne):
+        value = GPIO.input(channel)
+        if value == 0:
+            print("eau")
+        else: 
+            print("no eau")

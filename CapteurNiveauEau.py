@@ -5,22 +5,26 @@ GPIO.setmode(GPIO.BCM)
 
 entre = 27
 
-activer = False
+fonctionne = False
 
 GPIO.setup(entre, GPIO.IN)
 
-def stop():
-    activer = False
+def arreter():
+    global fonctionne
+    fonctionne = False
     print("stop")
 
-def commencer():
+def activer():
+    global fonctionne
+    fonctionne = True
     print("start")
-    activer = True
-    while activer:
+
+def prendreMesure():
+    if (fonctionne):
         etat = GPIO.input(entre)
         if (etat == 1):
             print("CapteurNiveauEau On, assez d'eau")
         else:
             print("CapteurNiveauEau Off, pas assez d'eau")
-        time.sleep(3)
-
+    else:
+        print("Nest pas allumer")

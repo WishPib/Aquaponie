@@ -1,3 +1,5 @@
+# SOURCE : https://srituhobby.com/motor-control-with-raspberry-pi/
+
 import RPi.GPIO as GPIO
 from time import sleep
 

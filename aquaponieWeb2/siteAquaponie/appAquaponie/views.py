@@ -6,7 +6,7 @@ from .models import Datafile
 
 def index(request):
 
-    data = Mesures.objects.all().values().first()
+    data = Mesures.objects.all().values().last()
     files = Datafile.objects.all()
 
     return render(request, 'appAquaponie/index.html', {

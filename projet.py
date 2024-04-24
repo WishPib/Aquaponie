@@ -3,9 +3,6 @@ from datetime import datetime
 from time import sleep
 
 #conditions idéales
-lumiereIdeale = 0 
-pHIdeale = 6.5 #[6, 7] 6 à 6.5?
-temperatureIdeale = 0
 niveauDEauIdeale = 0
 humiditeIdeale = 0
 
@@ -13,7 +10,7 @@ conn = sqlite3.connect('AquaPonie')
 conn.execute("DROP TABLE donnees")
 cur = conn.cursor() 
 
-req = "CREATE TABLE donnees(date TEXT NOT NULL, lumiere INTEGER not null, pH INTEGER not null, temperature INTEGER not null, niveauDEau INTEGER not null, humidite INTEGER not null)"  
+req = "CREATE TABLE donnees(date TEXT NOT NULL, niveauDEau BOOLEAN not null, humidite BOOLEAN not null)"  
 cur.execute(req)
 conn.commit() 
 
@@ -22,13 +19,11 @@ while True:
     date = now.strftime("%Y/%m/%d %H:%M:%S")
 
     #lire les données des capteurs
-    lumiere = 1        
-    pH = 2
-    temperature = 3
-    niveauDEau = 4        
-    humidite = 5
 
-    cur.execute("Insert into donnees (`date` , `lumiere` , `pH` , `temperature` , `niveauDEau`, `humidite`) values (? , ? , ? , ? , ?, ?)" , (date , lumiere , pH , temperature , niveauDEau , humidite) )
+    niveauDEau = True       
+    humidite = True
+
+    cur.execute("Insert into donnees (`date` , `niveauDEau`, `humidite`) values (? , ? , ?)" , (date , niveauDEau , humidite) )
     conn.commit() 
     sleep(600) #10 minutes
  

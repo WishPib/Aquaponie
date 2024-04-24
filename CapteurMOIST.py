@@ -12,3 +12,4 @@ def prendreMesure():
         print("eau")
     else: 
         print("no eau")
+    return value

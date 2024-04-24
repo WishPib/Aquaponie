@@ -10,6 +10,7 @@ GPIO.setup(entre, GPIO.IN)
 def prendreMesure():
     etat = GPIO.input(entre)
     if (etat == 1):
-            print("CapteurNiveauEau On, assez d'eau")
+        print("CapteurNiveauEau On, assez d'eau")
     else:
-            print("CapteurNiveauEau Off, pas assez d'eau")
+        print("CapteurNiveauEau Off, pas assez d'eau")
+    return etat    

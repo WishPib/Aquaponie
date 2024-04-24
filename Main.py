@@ -3,13 +3,7 @@ import CapteurNiveauEau
 import CapteurMOIST
 import Pompe
 
-CapteurNiveauEau.activer()
-CapteurMOIST.activer()
-time.sleep(2)
-
-
-
-#CapteurNiveauEau.arreter()
+time.sleep(1)
 
 def prendreMesures():
     CapteurNiveauEau.prendreMesure()

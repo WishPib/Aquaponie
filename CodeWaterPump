@@ -4,9 +4,9 @@ import RPi.GPIO as GPIO
 from time import sleep
 
 # Include the motor control pins
-ENA = 13
-IN1 = 19
-IN2 = 26
+ENA = 14
+IN1 = 15
+IN2 = 18
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)

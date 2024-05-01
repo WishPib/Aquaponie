@@ -1,4 +1,4 @@
-# Aquaponie <a name="Aquaponie"></a>
+# Aquaponie <a name="Aquaponie"></a>  <!--https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents-->
 L’aquaponie est un système fermé où des plantes ou bien des légumes sont alimentées avec de l’eau qui contient des nutriments. Cette eau avec les nutriments viendrait d’un autre bassin d’eau qui contiendrait des poissons qui relâcheront ces nutriments après avoir mangé de la nourriture. Le bassin avec les poissons est rempli par l’eau qui passe à travers les plantes ou les légumes, comme vu ci-dessous. 
 
 ![schema-composants-aquaponie](https://github.com/WishPib/Aquaponie/assets/157630823/ae3ba559-eeb1-488e-b1b1-b1f69d71db17)
@@ -8,18 +8,23 @@ Le but de ce projet, c’est de prendre ce système à une dimension plus comple
 ## Table des matières
 - [Introduction](#Aquaponie)
 - [Projet](#Projet)
-  - [Schémas](#Schémas)
   - [Matériel nécessaire](#Matériel)
   - [Installations à faire](#Installations)
+  - [Schémas](#Schémas)
+  - [Guide d'utilisation](#utilisation)
 - [Conclusion](#Conclusion)
   - [Autheurs](#Autheurs)
 
 ## Projet <a name="Projet"></a>
-### Schémas <a name="Schémas"></a>
+Voici les détails nécessaire pour que vous repreniez personnellement ce projet, incluant le matériel physique, les installations à faire sur vos appareils électronique si vous ne les aviez pas encore, comment tout assembler ça et comment l'utiliser. Pour cette section, gardez en tête que c'est ce que nous avons utilisé pour réaliser notre projet. Si vous voulez faire un changement qui sera plus approprié à vos besoins, vous avez une pièce qui ne fonctionne pas ou bien vous n'avez pas et ne pouvez pas avoir une certaine partie du système, n'oubliez pas que le remplacement que vous utilisiez ne marcherait peut-être pas avec notre code.
 ### Matériel nécessaire <a name="Matériel"></a>
+La pièce centrale du système est le Raspberry Pi 4 modèle B. C'est un ordinateur réduit qu’on utilisera pour connecter les capteurs ensembles et pour traiter les données obtenues. On l’a choisi parce qu’il est très bon dans des projets automatiques personnels, grâce à ses broches GPIO (General-Purpose Input/Output). 
+
 ### Installations à faire <a name="Installations"></a>
+### Schémas <a name="Schémas"></a>
+### Guide d'utilisation <a name="utilisation"></a>
 
 ## Conclusion <a name="Conclusion"></a>
-Pour résumer, ce projet est une manière d'automatiser un système d'aquaponie. Si vous avez le matériel nécessaire
+Pour résumer, ce projet est notre manière d'automatiser un système d'aquaponie. Si vous avez le matériel nécessaire
 ### Autheurs <a name="Autheurs"></a>
- 
+Raphaël Hoffmann, Raphaël Charabaty, Shunyi Wang et Victor Alexandre Frings-Morales sont tous des étudiants dans le programme de Sciences, informatique et mathématique au Collège Bois de Boulogne à Montréal. Ils ont fait ce projet d’aquaponie pour leur dernier cours de programmation dans leur programme, le cours de projet d’intégration en sciences informatiques et mathématiques.

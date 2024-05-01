@@ -19,7 +19,8 @@ Le but de ce projet, c’est de prendre ce système à une dimension plus comple
 Voici les détails nécessaire pour que vous repreniez personnellement ce projet, incluant le matériel physique, les installations à faire sur vos appareils électronique si vous ne les aviez pas encore, comment tout assembler ça et comment l'utiliser. Pour cette section, gardez en tête que c'est ce que nous avons utilisé pour réaliser notre projet. Si vous voulez faire un changement qui sera plus approprié à vos besoins, vous avez une pièce qui ne fonctionne pas ou bien vous n'avez pas et ne pouvez pas avoir une certaine partie du système, n'oubliez pas que le remplacement que vous utilisiez ne marcherait peut-être pas avec notre code.
 ### Matériel nécessaire <a name="Matériel"></a>
 La pièce centrale du système est le Raspberry Pi 4 modèle B. C'est un ordinateur réduit qu’on utilisera pour connecter les capteurs ensembles et pour traiter les données obtenues. On l’a choisi parce qu’il est très bon dans des projets automatiques personnels, grâce à ses broches GPIO (General-Purpose Input/Output). 
-
+![616RFn6Jv5L _AC_SL1024_](https://github.com/WishPib/Aquaponie/assets/157630823/340560d8-9779-4581-a3cc-9e6a26ad6836)
+Vous aurez besoin d'un Ti-Cobbler Plus, une extension pour le Raspberry pi qui permet de connecter toutes ses brochures GPIO à une planche à pain électronique. Bien sûr, vous aurez besoin de fils GPIO pour tout connecter ensemble.
 ### Installations à faire <a name="Installations"></a>
 ### Schémas <a name="Schémas"></a>
 ### Guide d'utilisation <a name="utilisation"></a>

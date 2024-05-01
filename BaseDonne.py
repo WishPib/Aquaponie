@@ -3,10 +3,9 @@ from datetime import datetime
 from time import sleep
 import os
 
-#changer de directory a Aquaponie avec dans la console/terminal cd Aquaponie
-os.chdir('/home/aquaponie/Aquaponie')
 
-conn = sqlite3.connect('aquaponieDB') #nom du DB
+
+conn = sqlite3.connect('/home/aquaponie/Aquaponie/aquaponieDB.db') #nom du DB
 cur = conn.cursor()
 
 def resetBD():

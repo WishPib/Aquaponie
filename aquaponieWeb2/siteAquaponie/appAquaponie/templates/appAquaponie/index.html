@@ -111,11 +111,35 @@ li::before {
         <div class="measurements">
             <h2 style="color: #4CAF50;">Mesures</h2>
             <ul>
-
-                <li>Humidité: {{data.humidite ? "yes" : "no"}}</li>
-                <li>Niveau d'eau: {{data.niveauDeau ? "yes" : "no"}}</li>
+                <li id = "texteHumidite"></li>
+                <li id = "texteNiveauEau"></li>
             </ul>
+                <!-- code aider par chatGPT -->
+            <script>
+                function updateData() {
+                    var humidite = "{{ data.humidite }}";
+                    var niveauEau = "{{ data.niveauDeau }}";
+
+                    var texteHumiditeAfficher = document.getElementById("texteHumidite");
+                    var texteNiveauEauAfficher = document.getElementById("texteNiveauEau");
+
+                    if(humidite != 10) {
+                        texteHumiditeAfficher.innerHTML = "Terre assez humide";
+                    } else {
+                        texteHumiditeAfficher.innerHTML = "Terre pas assez humide. Manque d'eau";
+                    }
+
+                    if (niveauEau != 40) {
+                        texteNiveauEauAfficher.innerHTML = "Assez d'eau";
+                    } else {
+                        texteNiveauEauAfficher.innerHTML = "Pas assez d'eau";
+                    }
+                }
+                setInterval(updateData,5000);
+            </script>
         </div>
+
+        
 
                 {% for file in files %}
         <div class="db">

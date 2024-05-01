@@ -14,8 +14,14 @@ def prendreMesures():
     global valeurHumide
     valeurHumide = CapteurMOIST.prendreMesure()
 
-while True:
-    prendreMesures()
-    BaseDonne.envoyerBD(valeurNiveauEau,valeurHumide)
-    print()
-    time.sleep(2)
+#while True:
+    #prendreMesures()
+    #BaseDonne.envoyerBD(valeurNiveauEau,valeurHumide)
+    #print()
+    #time.sleep(2)
+
+BaseDonne.envoyerBD(False,True)
+time.sleep(10)
+BaseDonne.envoyerBD(True,False)
+time.sleep(7)
+BaseDonne.envoyerBD(True,True)

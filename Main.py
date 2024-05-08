@@ -16,10 +16,10 @@ def prendreMesures():
     affecterPompe(valeurHumide, valeurNiveauEau)
 
 def affecterPompe(valeurHumide, valeurNiveauEau) :
-    if valeurHumide == 0 or valeurNiveauEau == 1:
-        Pompe.pompe
+    if valeurHumide == 1 or valeurNiveauEau == 0:
+        Pompe.pomperEau(True, 100)
         sleep(50)
-        Pompe.stop
+        Pompe.stop()
     
 
 #while True:

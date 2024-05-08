@@ -3,17 +3,21 @@ from .models import Mesures
 from django.http import FileResponse
 from django.shortcuts import get_object_or_404
 from .models import Datafile
+from django.http import JsonResponse
 
+
+def latest_data(request):
+    data = Mesures.objects.all().values().first()
+    return JsonResponse(data)
 def index(request):
 
-    data = Mesures.objects.all().values().last()
+    data = Mesures.objects.all().values().first()
     files = Datafile.objects.all()
 
     return render(request, 'appAquaponie/index.html', {
         'data': data,
         'files': files
     })
-
 
 
 def download_datafile(request, datafile_id):

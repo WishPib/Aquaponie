@@ -3,7 +3,6 @@
 import os
 import sys
 
-#port 7000 works python manage.py runserver 7000
 
 def main():
     """Run administrative tasks."""

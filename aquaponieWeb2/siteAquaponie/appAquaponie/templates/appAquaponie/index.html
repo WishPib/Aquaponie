@@ -117,6 +117,19 @@ li::before {
                 <!-- code aider par chatGPT -->
             <script>
                 function updateData() {
+
+                    fetch('/latest-data/')
+            .then(response => response.json())
+            .then(data => {
+                // Update your HTML with the new data
+                // For example:
+                document.getElementById('humidity').textContent = data.humidite;
+                document.getElementById('water_level').textContent = data.niveauDeau;
+            })
+            .catch(err => console.error(err));
+
+
+
                     var humidite = "{{ data.humidite }}";
                     var niveauEau = "{{ data.niveauDeau }}";
 

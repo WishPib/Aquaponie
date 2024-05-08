@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from .views import latest_data
 from . import views
 
 urlpatterns = [
@@ -23,4 +24,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('download/<int:datafile_id>/',
          views.download_datafile, name='download_datafile'),
+    path('latest-data/', latest_data, name='latest-data'),
 ]

@@ -13,6 +13,14 @@ def prendreMesures():
     valeurNiveauEau = CapteurNiveauEau.prendreMesure()
     global valeurHumide
     valeurHumide = CapteurMOIST.prendreMesure()
+    affecterPompe(valeurHumide, valeurNiveauEau)
+
+def affecterPompe(valeurHumide, valeurNiveauEau) :
+    if valeurHumide == 0 or valeurNiveauEau == 1:
+        Pompe.pompe
+        sleep(50)
+        Pompe.stop
+    
 
 #while True:
     #prendreMesures()

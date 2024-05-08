@@ -15,7 +15,7 @@ def prendreMesures():
     valeurHumide = CapteurMOIST.prendreMesure()
     affecterPompe(valeurHumide, valeurNiveauEau)
 
-def affecterPompe(valeurHumide, valeurNiveauEau) :
+def __affecterPompe(valeurHumide, valeurNiveauEau) :
     if valeurHumide == 1 or valeurNiveauEau == 0:
         Pompe.pomperEau(True, 100)
         sleep(50)

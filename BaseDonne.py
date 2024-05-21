@@ -14,7 +14,7 @@ def resetBD():
     cur.execute(req)
     conn.commit() 
  
-
+# Envoyer les informations au data base
 def envoyerBD(niveauDEau,humidite):
     now = datetime.now()
     date = now.strftime("%Y/%m/%d %H:%M:%S")

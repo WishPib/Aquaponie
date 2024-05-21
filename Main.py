@@ -2,11 +2,11 @@ import time
 import CapteurNiveauEau
 import CapteurMOIST
 import BaseDonne
+import Pompe
 
 time.sleep(1)
 valeurNiveauEau = False
 valeurHumide = False
-BaseDonne.resetBD()
 
 def prendreMesures():
     global valeurNiveauEau
@@ -15,21 +15,15 @@ def prendreMesures():
     valeurHumide = CapteurMOIST.prendreMesure()
     affecterPompe(valeurHumide, valeurNiveauEau)
 
+# Pomper l'eau si la terre n'est pas assez humide
 def __affecterPompe(valeurHumide, valeurNiveauEau) :
-    if valeurHumide == 1 or valeurNiveauEau == 0:
+    if valeurHumide == 1:
         Pompe.pomperEau(True, 100)
         sleep(50)
         Pompe.stop()
     
-
-#while True:
-    #prendreMesures()
-    #BaseDonne.envoyerBD(valeurNiveauEau,valeurHumide)
-    #print()
-    #time.sleep(2)
-
-BaseDonne.envoyerBD(False,True)
-time.sleep(10)
-BaseDonne.envoyerBD(True,False)
-time.sleep(7)
-BaseDonne.envoyerBD(True,True)
+# Le programme roule en continu et peut être fermé avec ctrl + c dans la console
+while True:
+    prendreMesures()
+    BaseDonne.envoyerBD(valeurNiveauEau,valeurHumide)
+    time.sleep(2)

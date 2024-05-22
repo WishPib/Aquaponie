@@ -26,5 +26,6 @@ def __affecterPompe(valeurHumide, valeurNiveauEau) :
 # Le programme roule en continu et peut être fermé avec ctrl + c dans la console
 while True:
     prendreMesures()
+    print()
     BaseDonne.envoyerBD(valeurNiveauEau,valeurHumide)
     time.sleep(2)

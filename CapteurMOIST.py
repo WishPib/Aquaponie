@@ -9,7 +9,7 @@ GPIO.setup(channel, GPIO.IN)
 def prendreMesure():
     value = GPIO.input(channel)
     if value == 0:
-        print("eau")
+        print("eau détecté")
     else: 
-        print("no eau")
+        print("pas d'eau")
     return value

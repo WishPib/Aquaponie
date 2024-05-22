@@ -3,7 +3,7 @@ import CapteurNiveauEau
 import CapteurMOIST
 import BaseDonne
 import Pompe
-# Utiliser "python3 manage.py runserver 7000" dans le terminal en étant dans le bon directory pour lancer le serveur local
+# Utiliser "python3 manage.py runserver 7000" dans le terminal en étant dans le bon directory (aquaponieWeb2/siteAquaponie) pour lancer le serveur local
 # et ouvrire l'adresse donnée
 time.sleep(1)
 valeurNiveauEau = False

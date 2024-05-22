@@ -96,7 +96,7 @@ Alors, avec ce système, on est capable de déterminer l'humidité de la terre d
 
 Puis, voici à quoi le site ressemble:
 
-1
+![site aquaponie](https://github.com/WishPib/Aquaponie/assets/157630823/0dbf3744-00e2-4564-a26a-8bd2262dd058)
 
 ## Discussion <a name="Discussion"></a> 
 Alors, pour condenser notre projet en une phrase, on a réussi à manipuler automatiquement une pompe d'eau selon le niveau de l'eau, à capter l'humidité dans la terre des plantes dans un système d'aquaponie et d'afficher l'état de ce système sur un site web qu'on a créé. Parlons maintenant des prochaines étapes qu'on planifiait de faire si on le pouvait. La première chose qu'on aurait fait, c'est d'utiliser plus de capteurs et d'améliorer notre capteur de niveau d'eau. Bien qu'ils n'étaient pas nécessaires, avoir un capteur de niveau d'eau qui envoie une donnée plus précise et des capteurs de lumière, température ou de pH serait bien, car il est toujours bien d'avoir plus de données. La deuxième chose qu'on aurait fait, c'est créer un distributeur de nourriture automatique pour les poissons, quelque chose qui permettrait de mettre de la nourriture de poissons dans le bac à un temps régulier choisi par l'utilisateur, qui l'avertira sur le site si le distributeur commence à devenir vide et qui sera moins cher qu'un de ces distributeurs qui peuvent être trouvés dans des magasins. Finalement, on aurait testé notre système avec des vrais plantes et des vrais poissons, juste pour confirmer l'efficacité du système. Bien que nous n'avions pas eu la chance de faire ces améliorations, vous pouvez les considérez ces options comme des choses à ajouter vous-mêmes à votre projet.

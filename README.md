@@ -67,7 +67,7 @@ Voici le diagramme de classes:
 
 #### Diagramme de cas d'utilisation <a name="utilisation"></a>
 Voici le diagramme de cas d'utilisation:
-![Image1](https://github.com/WishPib/Aquaponie/assets/157630823/b8f7ab0f-fb2e-4129-9101-3ffc8ea9011e)
+![Image1](https://github.com/WishPib/Aquaponie/assets/157630823/fa87e221-4d49-4f93-b107-d4b81c597303)
 Nom: Retirer de l'information. 
 
 Données d'entrée: Ce cas commence dès que l'utilisateur du système Aquaponie accède au site Web. Il a l'option de cliquer sur plusieurs boutons ayant différentes fonctionnalités spécifiées. 
@@ -81,10 +81,6 @@ Le système demande à l'utilisateur de façon d'enregistrer les données obtenu
 Scénario alternatif:  
 1a. L'utilisateur clique sur "valeurs attendues" pour avoir accès aux intervalles de valeurs dans lesquels devraient se trouver les mesures fournies par les différents capteurs.  
 2a. Le système affiche les intervalles 
- 
-Scénario alternatif: 
-2a. Le client entre le mode d'opérations manuel en cliquant sur le bouton "override" 
-3a. Le système affichera une nouvelle page, donnant l'option de 3 boutons; un interrupteur pour allumer/éteindre la pompe, un bouton pour mettre à jour le Raspberry Pi et un "killswitch" pour éteindre la pompe et le Raspberry 
 
 ### Guide d'utilisation <a name="Guide"></a>
 Connectez tous les capteurs comme expliqué dans la section [Diagramme de pièces](#pièces). Prenez votre grand bac et collez le capteur de niveau d'eau IDUINO SE045 à l'intérieur du bord, à une position haute et pointant vers le bas dans le bac. Placez la pompe d'eau à l'extérieur du bac d'une manière qui permet qu'un des tube d'aller dans le bac et que l'autre attend à l'extérieur. Prenez vos plantes et mettez le capteur d'humidité dans la terre. Maintenant, remplissez le bac avec de l'eau jusqu'à ce que le niveau de l'eau touche le capteur du niveau d'eau et mettez les poissons dedans. Ensuite, mettez les plantes sur le bac, arrosez-les prématurement et placez le deuxième tube de la pompe qui était à l'extéreur dans une manière où l'eau qui sortira du tube arrosera les plantes. Puis, allumez la pile conntectée au système et connectez-vous le raspberry pi. Finalement, démarrez le programme comme c'est expliqué à la fin de la section [Installations à faire](#Installations) et vous pouvez vous déconnecter du raspberry pi après avoir confirmer que le système marche et que vous avez accès au site, mais n'oubliez pas de ne pas l'éteindre. Voilà, vous avez un système aquaponie automatisé. Le maintien des plantes et des poissons va dépendre de vous, car il varie selon lesquels vous avez choisis.

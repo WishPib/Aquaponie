@@ -107,53 +107,7 @@ li::before {
 
             <p>Ce projet vise à promouvoir l'agriculture urbaine et à offrir une solution écologique pour la production alimentaire locale. Grâce à son faible encombrement et sa consommation d'eau et d'énergie réduite, il est adapté aux espaces limités en ville.</p>
         </div>
-
-        <div class="measurements">
-            <h2 style="color: #4CAF50;">Mesures</h2>
-            <ul>
-                <li id = "texteHumidite"></li>
-                <li id = "texteNiveauEau"></li>
-            </ul>
-                <!-- code aider par chatGPT -->
-            <script>
-                function updateData() {
-
-                    fetch('/latest-data/')
-            .then(response => response.json())
-            .then(data => {
-                // Update your HTML with the new data
-                // For example:
-                document.getElementById('humidity').textContent = data.humidite;
-                document.getElementById('water_level').textContent = data.niveauDeau;
-            })
-            .catch(err => console.error(err));
-
-
-
-                    var humidite = "{{ data.humidite }}";
-                    var niveauEau = "{{ data.niveauDeau }}";
-
-                    var texteHumiditeAfficher = document.getElementById("texteHumidite");
-                    var texteNiveauEauAfficher = document.getElementById("texteNiveauEau");
-
-                    if(humidite != 10) {
-                        texteHumiditeAfficher.innerHTML = "Terre assez humide";
-                    } else {
-                        texteHumiditeAfficher.innerHTML = "Terre pas assez humide. Manque d'eau";
-                    }
-
-                    if (niveauEau != 40) {
-                        texteNiveauEauAfficher.innerHTML = "Assez d'eau";
-                    } else {
-                        texteNiveauEauAfficher.innerHTML = "Pas assez d'eau";
-                    }
-                }
-                setInterval(updateData,5000);
-            </script>
-        </div>
-
         
-
                 {% for file in files %}
         <div class="db">
             <h2 style="color: #4CAF50;">Database</h2>
